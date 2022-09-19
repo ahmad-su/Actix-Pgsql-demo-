@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Catdex</title>
+</head>
+
+<body>
+    <h1>{{project_name}}</h1>
+    <p>Index of Cats</p>
+
+    <h1>{{project_name}}</h1>
+    <section class="cats">
+        {{#each cats}}
+        <article class="cat">
+            <h3>{{this.id}}#  {{this.name}}</h3>
+            <img src="{{this.image_path}}" alt="A cat">
+        </article>
+        {{/each}}
+    </section>
+    <!-- <section class="cats">
+        <article class="cat">
+            <h3>Angora</h3>
+            <img src="static/images/angora.png" alt="Angora Cat">
+        </article>
+        <article class="cat">
+            <h3>Bengal</h3>
+            <img src="static/images/bengal.png" alt="Bengal Cat">
+        </article>
+        <article class="cat">
+            <h3>Calico</h3>
+            <img src="static/images/calico.png" alt="Calico Cat">
+        </article>
+        <article class="cat">
+            <h3>Hymalayan</h3>
+            <img src="static/images/hymalayan.png" alt="Hymalayan Cat">
+        </article>
+    </section> -->
+</body>
+
+</html>
